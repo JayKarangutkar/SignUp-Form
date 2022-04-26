@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>SignUp Page </title>
+	<link rel="stylesheet" href="Sign.css">
+</head>
+<body>  
+	<h1 class="H1">Sign Up Page</h1>
+<form name="myform" method="post"  onsubmit="return validateform()" >  
+<label>UserName</label><br>
+ <input type="text" class="namee" placeholder="Enter Your Username" name="name"><br/>  
+<label>Password</label><br>
+<input type="password" class="passwords" placeholder="Enter Your Password" name="password"><br/>  
+<br>
+<input type="submit" value="submit" class="submit">  
+</form>  
+</body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+  else
+  {
+  	alert("Successfull Login");
+  }
+}  
+</script>  
+</html>
